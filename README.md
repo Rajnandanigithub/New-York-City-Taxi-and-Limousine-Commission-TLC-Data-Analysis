@@ -1,1 +1,3 @@
 # New-York-City-Taxi-and-Limousine-Commission-TLC-Data-Analysis
+This project aims to provide insights into New York City taxi ridership using data from the New York City Taxi and Limousine Commission (TLC). The goal is to conduct exploratory data analysis (EDA), visualize key trends, and present the findings in a user-friendly manner. Through data structuring, cleaning, and analysis, the project aims to uncover patterns related to ride durations, trip volumes, and other key metrics over time.
+The analysis aims to help the New York City TLC and other stakeholders better understand taxi ridership trends, which can guide decision-making and improve services for the city’s transportation ecosystem.
