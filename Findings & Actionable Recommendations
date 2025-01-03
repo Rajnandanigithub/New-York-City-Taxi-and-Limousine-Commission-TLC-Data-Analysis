@@ -1,0 +1,17 @@
+New York City Taxi and Limousine Commission (TLC) Data Analysis Findings :
+Average Trip Distance: ~3 km, but the minimum value is 0 km, which seems suspicious and likely indicates data issues.
+Maximum Trip Distance: 33 km, which appears unusually high and may represent an outlier.
+Fare Amount: Average fare amount is $120, which seems abnormally high and could be impacted by outliers.
+Total Amount: Average total amount is $16, but there are negative values present, which are questionable and suggest potential data errors.
+Outliers: Both fare amounts and trip distances show large maximum values, indicating the presence of outliers .
+With the help of Boxplots variables like trip_distance , fare_amount , tip_amount , tolls_amount ,total_amount  are having outliers 
+Separating the tip amount by vendor reveals that there are no noticeable aberrations in the distribution of tips between the two vendors in the dataset. Vendor two has a slightly higher share of the rides, and this proportion is approximately maintained for all tip amounts.
+Nearly two thirds of the rides were single occupancy, though there were still nearly 700 rides with as many as six passengers. Also, there are 33 rides with an occupancy count of zero, which doesn't make sense. These would likely be dropped unless a reasonable explanation can be found for them.
+Mean tip amount varies very little by passenger count. Although it does drop noticeably for four-passenger rides, it's expected that there would be a higher degree of fluctuation because rides with four passengers were the least plentiful in the dataset (aside from rides with zero passengers).
+Monthly rides are fairly consistent, with notable dips in the summer months of July, August, and September, and also in February.
+Thursday had the highest gross revenue of all days, and Sunday and Monday had the least. Interestingly, although Saturday had only 35 fewer rides than Thursday, its gross revenue was ~$6,000 less than Thursday's—more than a 10% drop.
+
+Some actionable REcommendations :
+Investigate or remove rides with 0 km trip distance and zero passengers to ensure data accuracy. These entries likely represent errors or unusual cases that need to be reviewed or cleaned.
+Review extreme trip distances and fare amounts, especially those that seem unusually high (e.g., 33 km trips or $120 fares)
+Ensure the accuracy of passenger counts in the dataset. Consider excluding or investigating rides with zero passengers and those with unusually high occupancy (e.g., six passengers). This can help better understand the actual passenger load in taxis
